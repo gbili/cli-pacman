@@ -1,0 +1,4 @@
+cli-pacman
+==========
+
+Unfinished project
