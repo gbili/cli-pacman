@@ -1,0 +1,223 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = A4AD60B01573A98A008D4A9E /* SalesMan */;
+		activeTarget = 8DD76FA90486AB0100D96B5E /* SalesMan */;
+		addToTargets = (
+			8DD76FA90486AB0100D96B5E /* SalesMan */,
+		);
+		codeSenseManager = A4AD60B51573A9A8008D4A9E /* Code sense */;
+		executables = (
+			A4AD60B01573A98A008D4A9E /* SalesMan */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1164,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 363985746;
+			PBXWorkspaceStateSaveDate = 363985746;
+		};
+		perUserProjectItems = {
+			A4AD60FF1573FF12008D4A9E /* PBXTextBookmark */ = A4AD60FF1573FF12008D4A9E /* PBXTextBookmark */;
+			A4B4EC41157FCED100553467 /* PBXTextBookmark */ = A4B4EC41157FCED100553467 /* PBXTextBookmark */;
+			A4B4EC42157FCED100553467 /* PBXTextBookmark */ = A4B4EC42157FCED100553467 /* PBXTextBookmark */;
+			A4B4EC43157FCED100553467 /* PBXTextBookmark */ = A4B4EC43157FCED100553467 /* PBXTextBookmark */;
+			A4D2B46315B1FB1F00484997 /* PBXTextBookmark */ = A4D2B46315B1FB1F00484997 /* PBXTextBookmark */;
+			A4D2B46615B1FB1F00484997 /* PBXTextBookmark */ = A4D2B46615B1FB1F00484997 /* PBXTextBookmark */;
+			A4D2B47215B1FB6900484997 /* PBXTextBookmark */ = A4D2B47215B1FB6900484997 /* PBXTextBookmark */;
+			A4D2B47515B1FB6900484997 /* PBXTextBookmark */ = A4D2B47515B1FB6900484997 /* PBXTextBookmark */;
+		};
+		sourceControlManager = A4AD60B41573A9A8008D4A9E /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	08FB7796FE84155DC02AAC07 /* salesman.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1386, 7553}}";
+			sepNavSelRange = "{3306, 0}";
+			sepNavVisRange = "{26, 1408}";
+		};
+	};
+	8DD76FA90486AB0100D96B5E /* SalesMan */ = {
+		activeExec = 0;
+		executables = (
+			A4AD60B01573A98A008D4A9E /* SalesMan */,
+		);
+	};
+	A41EB4E6157A7ED1003ABAFE /* salesmanb.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1354, 7124}}";
+			sepNavSelRange = "{2284, 0}";
+			sepNavVisRange = "{2064, 1137}";
+		};
+	};
+	A4AD60B01573A98A008D4A9E /* SalesMan */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = SalesMan;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	A4AD60B41573A9A8008D4A9E /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	A4AD60B51573A9A8008D4A9E /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	A4AD60B81573A9EE008D4A9E /* salesman.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1041, 754}}";
+			sepNavSelRange = "{2024, 0}";
+			sepNavVisRange = "{0, 2494}";
+			sepNavWindowFrame = "{{107, 121}, {1003, 881}}";
+		};
+	};
+	A4AD60BC1573AC7C008D4A9E /* main.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {988, 3705}}";
+			sepNavSelRange = "{5941, 0}";
+			sepNavVisRange = "{0, 2760}";
+			sepNavWindowFrame = "{{107, 121}, {1003, 881}}";
+		};
+	};
+	A4AD60FF1573FF12008D4A9E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C6A0FF2C0290799A04C91782 /* SalesMan.1 */;
+		name = "SalesMan.1: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 899;
+		vrLoc = 0;
+	};
+	A4B4EC41157FCED100553467 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A4AD60B81573A9EE008D4A9E /* salesman.h */;
+		name = "salesman.h: 52";
+		rLen = 0;
+		rLoc = 2024;
+		rType = 0;
+		vrLen = 2494;
+		vrLoc = 0;
+	};
+	A4B4EC42157FCED100553467 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A4AD60BC1573AC7C008D4A9E /* main.c */;
+		name = "main.c: 302";
+		rLen = 0;
+		rLoc = 8675;
+		rType = 0;
+		vrLen = 1745;
+		vrLoc = 2549;
+	};
+	A4B4EC43157FCED100553467 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A41EB4E6157A7ED1003ABAFE /* salesmanb.h */;
+		name = "salesmanb.h: 118";
+		rLen = 0;
+		rLoc = 2284;
+		rType = 0;
+		vrLen = 1137;
+		vrLoc = 2064;
+	};
+	A4D2B46315B1FB1F00484997 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* salesman.c */;
+		name = "salesman.c: 160";
+		rLen = 0;
+		rLoc = 3306;
+		rType = 0;
+		vrLen = 1408;
+		vrLoc = 26;
+	};
+	A4D2B46615B1FB1F00484997 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A4AD60BC1573AC7C008D4A9E /* main.c */;
+		name = "main.c: 180";
+		rLen = 0;
+		rLoc = 5941;
+		rType = 0;
+		vrLen = 2760;
+		vrLoc = 0;
+	};
+	A4D2B47215B1FB6900484997 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* salesman.c */;
+		name = "salesman.c: 160";
+		rLen = 0;
+		rLoc = 3306;
+		rType = 0;
+		vrLen = 1408;
+		vrLoc = 26;
+	};
+	A4D2B47515B1FB6900484997 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A4AD60BC1573AC7C008D4A9E /* main.c */;
+		name = "main.c: 180";
+		rLen = 0;
+		rLoc = 5941;
+		rType = 0;
+		vrLen = 2760;
+		vrLoc = 0;
+	};
+	C6A0FF2C0290799A04C91782 /* SalesMan.1 */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {635, 962}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 899}";
+		};
+	};
+}

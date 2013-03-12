@@ -1,0 +1,188 @@
+TSalesMan
+v7
+r0
+t360697054.111222
+cCheck dependencies
+cCompileC build/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/salesman.o /Users/gui/Dropbox/Dev/C/SalesMan/salesman.c normal x86_64 c com.apple.compilers.gcc.4_2
+cCompileC build/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/main.o /Users/gui/Dropbox/Dev/C/SalesMan/main.c normal x86_64 c com.apple.compilers.gcc.4_2
+cLd /Users/gui/Dropbox/Dev/C/SalesMan/build/Debug/SalesMan normal x86_64
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004A769DAB00000000000000EE
+t1249287595
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/pthread.h
+c000000004A5C14A700000000000038F0
+t1247548583
+s14576
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/semaphore.h
+c000000004A5C14A6000000000000046F
+t1247548582
+s1135
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdio.h
+c000000004A5C14A70000000000004174
+t1247548583
+s16756
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdlib.h
+c000000004A5C14A70000000000002DF5
+t1247548583
+s11765
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/time.h
+c000000004A5C14A7000000000000178E
+t1247548583
+s6030
+
+N/Users/gui/Dropbox/Dev/C/SalesMan/build/Debug/SalesMan
+t1339004254
+s22920
+
+N/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/SalesMan.LinkFileList
+c000000004FCBA4A800000000000000D6
+t1338746024
+s214
+
+N/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/main.o
+t1338994909
+s13556
+
+N/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/rest.o
+t2
+s0
+
+N/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/salesman.o
+t1339004227
+s17640
+
+N/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/salesmanb.o
+t2
+s0
+
+N/Users/gui/Dropbox/Dev/C/SalesMan/main.c
+c000000004FCF70D4000000000000230E
+t1338994900
+s8974
+i<stdio.h>
+i<stdlib.h>
+i<time.h>
+i<pthread.h>
+i<semaphore.h>
+i<math.h>
+i"salesman.h"
+
+N/Users/gui/Dropbox/Dev/C/SalesMan/rest.c
+c000000004FC3C2E20000000000001B4A
+t1338229474
+s6986
+
+N/Users/gui/Dropbox/Dev/C/SalesMan/rest.h
+c000000004FC374FC0000000000000080
+t1338209532
+s128
+
+N/Users/gui/Dropbox/Dev/C/SalesMan/salesman.c
+c000000004FCF95440000000000003F69
+t1339004228
+s16233
+i<stdio.h>
+i<stdlib.h>
+i<math.h>
+i"salesman.h"
+
+N/Users/gui/Dropbox/Dev/C/SalesMan/salesman.h
+c000000004FCF6FD900000000000009BE
+t1338994649
+s2494
+
+N/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c
+c000000004FCBA49A0000000000002014
+t1338746010
+s8212
+i"salesman.h"
+
+N/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.h
+c000000004FCA4B1500000000000035CD
+t1338657557
+s13773
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies360697054#360697054#0(0"0(0#1#0"8614742848#0"0#
+
+CCompileC build/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/main.o /Users/gui/Dropbox/Dev/C/SalesMan/main.c normal x86_64 c com.apple.compilers.gcc.4_2
+s360687708.874272
+e360687709.012718
+r1
+xCompileC
+xbuild/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/main.o
+x/Users/gui/Dropbox/Dev/C/SalesMan/main.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/gui/Dropbox/Dev/C/SalesMan/main.c: In function 'main':
+o/Users/gui/Dropbox/Dev/C/SalesMan/main.c:152: warning: implicit declaration of function 'sleep'
+lSLF07#2@48"Compile /Users/gui/Dropbox/Dev/C/SalesMan/main.c360687708#360687709#0(158"/Users/gui/Dropbox/Dev/C/SalesMan/main.c: In function 'main':/Users/gui/Dropbox/Dev/C/SalesMan/main.c:152: warning: implicit declaration of function 'sleep'1(22@40"Implicit declaration of function 'sleep'360687708#62#96#0(6@40"/Users/gui/Dropbox/Dev/C/SalesMan/main.c360687700#152#0#152#0#36"implicit declaration of function '*'0(0#0#40"/Users/gui/Dropbox/Dev/C/SalesMan/main.c8614418944#1233"    cd /Users/gui/Dropbox/Dev/C/SalesMan    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/SalesMan-generated-files.hmap -I/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/SalesMan-own-target-headers.hmap -I/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/SalesMan-all-target-headers.hmap -iquote /Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/SalesMan-project-headers.hmap -F/Users/gui/Dropbox/Dev/C/SalesMan/build/Debug -I/Users/gui/Dropbox/Dev/C/SalesMan/build/Debug/include -I/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/DerivedSources/x86_64 -I/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/DerivedSources -c /Users/gui/Dropbox/Dev/C/SalesMan/main.c -o /Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/main.o0#
+
+CCompileC build/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/rest.o /Users/gui/Dropbox/Dev/C/SalesMan/rest.c normal x86_64 c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/salesman.o /Users/gui/Dropbox/Dev/C/SalesMan/salesman.c normal x86_64 c com.apple.compilers.gcc.4_2
+s360697054.060281
+e360697054.062635
+r1
+xCompileC
+xbuild/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/salesman.o
+x/Users/gui/Dropbox/Dev/C/SalesMan/salesman.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@52"Compile /Users/gui/Dropbox/Dev/C/SalesMan/salesman.c360697054#360697054#0(0"0(0#0#44"/Users/gui/Dropbox/Dev/C/SalesMan/salesman.c8615978240#1241"    cd /Users/gui/Dropbox/Dev/C/SalesMan    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/SalesMan-generated-files.hmap -I/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/SalesMan-own-target-headers.hmap -I/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/SalesMan-all-target-headers.hmap -iquote /Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/SalesMan-project-headers.hmap -F/Users/gui/Dropbox/Dev/C/SalesMan/build/Debug -I/Users/gui/Dropbox/Dev/C/SalesMan/build/Debug/include -I/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/DerivedSources/x86_64 -I/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/DerivedSources -c /Users/gui/Dropbox/Dev/C/SalesMan/salesman.c -o /Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/salesman.o0#
+
+CCompileC build/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/salesmanb.o /Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c normal x86_64 c com.apple.compilers.gcc.4_2
+s360438711.800893
+e360438711.852551
+r0
+xCompileC
+xbuild/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/salesmanb.o
+x/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+o/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:16: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'stp_getPath'
+o/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:36: error: expected ')' before '*' token
+o/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:58: error: expected ')' before '*' token
+o/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:115: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'stp_nodeSetNewExitArm'
+o/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c: In function 'stp_setDirectionPriority':
+o/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:180: error: 'directions' undeclared (first use in this function)
+o/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:180: error: (Each undeclared identifier is reported only once
+o/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:180: error: for each function it appears in.)
+o/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:180: error: 'LEFT' undeclared (first use in this function)
+o/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:180: error: 'RIGHT' undeclared (first use in this function)
+o/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:191: error: 'UP' undeclared (first use in this function)
+o/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:191: error: 'DOWN' undeclared (first use in this function)
+o/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c: At top level:
+o/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:206: error: expected ')' before '*' token
+lSLF07#2@53"Compile /Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c360438711#360438711#0(1405"/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:16: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'stp_getPath'/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:36: error: expected ')' before '*' token/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:58: error: expected ')' before '*' token/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:115: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'stp_nodeSetNewExitArm'/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c: In function 'stp_setDirectionPriority':/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:180: error: 'directions' undeclared (first use in this function)/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:180: error: (Each undeclared identifier is reported only once/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:180: error: for each function it appears in.)/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:180: error: 'LEFT' undeclared (first use in this function)/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:180: error: 'RIGHT' undeclared (first use in this function)/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:191: error: 'UP' undeclared (first use in this function)/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:191: error: 'DOWN' undeclared (first use in this function)/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c: At top level:/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c:206: error: expected ')' before '*' token11(4@69"Expected '=', ',', ';', 'asm' or '__attribute__' before 'stp_getPath'360438711#0#127#0(6@45"/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c360437701#16#0#16#0#19"expected * before *0(4@29"Expected ')' before '*' token360438711#127#87#0(6@45"/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c360437701#36#0#36#0#19"expected * before *0(4@29"Expected ')' before '*' token360438711#214#87#0(6@45"/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c360437701#58#0#58#0#19"expected * before *0(4@79"Expected '=', ',', ';', 'asm' or '__attribute__' before 'stp_nodeSetNewExitArm'360438711#301#138#0(6@45"/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c360437701#115#0#115#0#19"expected * before *0(4@52"'directions' undeclared (first use in this function)360438711#526#111#0(6@45"/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c360437701#180#0#180#0#43"'*' undeclared (first use in this function)0(4@46"'LEFT' undeclared (first use in this function)360438711#837#105#0(6@45"/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c360437701#180#0#180#0#43"'*' undeclared (first use in this function)0(4@47"'RIGHT' undeclared (first use in this function)360438711#942#106#0(6@45"/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c360437701#180#0#180#0#43"'*' undeclared (first use in this function)0(4@44"'UP' undeclared (first use in this function)360438711#1048#103#0(6@45"/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c360437701#191#0#191#0#43"'*' undeclared (first use in this function)0(4@46"'DOWN' undeclared (first use in this function)360438711#1151#105#0(6@45"/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c360437701#191#0#191#0#43"'*' undeclared (first use in this function)0(23@13"At top level:360438711#1256#61#0(6@45"/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c360437701#0#0#0#0#0"0(4@29"Expected ')' before '*' token360438711#1317#88#0(6@45"/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c360437701#206#0#206#0#19"expected * before *0(0#0#45"/Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c8618537952#1243"    cd /Users/gui/Dropbox/Dev/C/SalesMan    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/SalesMan-generated-files.hmap -I/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/SalesMan-own-target-headers.hmap -I/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/SalesMan-all-target-headers.hmap -iquote /Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/SalesMan-project-headers.hmap -F/Users/gui/Dropbox/Dev/C/SalesMan/build/Debug -I/Users/gui/Dropbox/Dev/C/SalesMan/build/Debug/include -I/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/DerivedSources/x86_64 -I/Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/DerivedSources -c /Users/gui/Dropbox/Dev/C/SalesMan/salesmanb.c -o /Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/salesmanb.o1#
+
+CLd /Users/gui/Dropbox/Dev/C/SalesMan/build/Debug/SalesMan normal x86_64
+s360697054.062984
+e360697054.111132
+r1
+xLd
+x/Users/gui/Dropbox/Dev/C/SalesMan/build/Debug/SalesMan
+xnormal
+xx86_64
+lSLF07#2@59"Link /Users/gui/Dropbox/Dev/C/SalesMan/build/Debug/SalesMan360697054#360697054#0(0"0(0#0#0"8612536896#477"    cd /Users/gui/Dropbox/Dev/C/SalesMan    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/gui/Dropbox/Dev/C/SalesMan/build/Debug -F/Users/gui/Dropbox/Dev/C/SalesMan/build/Debug -filelist /Users/gui/Dropbox/Dev/C/SalesMan/build/SalesMan.build/Debug/SalesMan.build/Objects-normal/x86_64/SalesMan.LinkFileList -mmacosx-version-min=10.6 -o /Users/gui/Dropbox/Dev/C/SalesMan/build/Debug/SalesMan0#
+

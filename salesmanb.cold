@@ -1,0 +1,238 @@
+/*
+ *  salesmanb.c
+ *  SalesMan
+ *
+ *  Created by gui on 6/2/12.
+ *  Copyright 2012 __MyCompanyName__. All rights reserved.
+ *
+ */
+
+#include "salesman.h"
+
+
+/*
+ * 
+ */
+s_path stp_getPath(int start, int target)
+{
+	s_path seed;
+	seed.absPositions[0] = start;
+	seed.nodes[0].absPos = start;
+	seed = stp_pathFinder( &seed, 0, 0, MAX_STEPS, target);
+	stp_pathRecShortener( &seed, 0, 0, MAX_STEPS);
+	return seed;
+}
+
+/* Takes a path rolls back the nodes and at each node,
+ * it tries to get to target (with the help of stp_pathFinder())
+ * with a different arm than the one used in argument path.
+ * If a shorter path is found, it calls itself to check for
+ * an even shorter on that new shorter path.
+ * If no shorter path is found, the node is updated and the
+ * arm that has been tried is locked. (done by stp_pathFinder)
+ * Once all arms have been tried, it rollsback to the next node
+ * 
+ */
+void stp_pathRecShortener(s_path * bestPath, int rollBackToNodeKey, int rollBackToAbsPosKey, int maxSteps)
+{
+	int rollbackStepCnt;
+	int i, j;
+	s_path tempPath;
+	for (j = bestPath->maxNodeKey; j >= rollBackToNodeKey; j--) {
+		for (i = bestPath->maxAbsPosKey; i >= rollBackToAbsPosKey; i--) {
+			if (bestPath->absPositions[i] == bestPath->nodes[j].absPos) {
+				rollbackStepCnt = bestPath->maxAbsPosKey - i;
+				//call find path on next testeable node arm (recursivity will do every node arm)
+				stp_pathFinder(bestPath, j, i, rollbackStepCnt, bestPath->absPositions[bestPath->maxAbsPosKey]/*=target*/);
+				stp_pathRecShortener(bestPath, j, i, bestPath->maxAbsPosKey - i /*new maxSteps*/);
+			}
+		}
+	}
+}
+
+/* 
+ * Tries to get to the target from the path node indicated by startingNodeKey 
+ * sets path to the first node arm that gives a path to target
+ * returns new stepCount
+ */
+int stp_pathFinder(s_path * path, int startingNodeKey, int startingAbsPosKey, int maxSteps, int target)
+{
+	int nextAbsPos, i, j;
+	s_path pathGuess;
+	s_node node, sameNextKeyLocked;
+	node = path->nodes[startingNodeKey];
+	
+	/* Try to find path from node (stp_nodeSetNewExitArm(), automatically tries a new arm when node.exitArm != NOT_SET)*/
+	for (i = 0, j = 0; i < maxSteps; i++) {
+		/* Save step in Path */
+		pathGuess.absPositions[i] = node.absPos;
+		if (pathGuess.absPositions[i] == target) {
+			break;
+		}
+
+		/* Let stp_nodeSetNewExitArm find the best node.exitArm (next step) */
+		if (0 == j) { //only store oppositeNode if first node
+			sameNextKeyLocked = stp_nodeSetNewExitArm(&node, target);
+		} else { //otherwise dont bother
+			stp_nodeSetNewExitArm( &node, target);
+		}
+
+		if (NOT_SET == node.exitArm ) {
+			/* When stp_nodeSetNewExitArm return node has no exitArm target has been reached*/
+			break;//found target
+		}
+		/* Save node information in path when real node */
+		if (node.armCount > 2) { // if node is a real node keep it in pathGuess.nodes[]			
+			pathGuess.nodes[j++] = node;
+		}
+
+		/* Initialize next node absPos with current node.exitArm */
+		nextAbsPos = node.arms[node.exitArm];// and node.enterArm with current absPos
+		node = s_node_init( nextAbsPos, pathGuess.absPositions[i] );//pathGuess.absPositions[i] contains key of current step it will be set as node.enterArm in next node init
+	}
+
+	pathGuess.maxAbsPosKey = i;
+	pathGuess.maxNodeKey = (0 < j)? (j - 1) : 0; //j is incrementer after every node is saved in pathGuess.nodes, it is possible that no node is saved, make sure there is at least one node saved so j > 0
+	pathGuess.stepCount = i + 1;
+	
+	/* Only modify path if a better has been found */
+	if (pathGuess.stepCount < maxSteps) {
+		stp_pathReplace( &pathGuess, path, startingNodeKey, startingAbsPosKey);
+	} else { /* update the node indicated by startingNodeKey so we keep track of locked arms */
+		path->nodes[startingNodeKey] = sameNextKeyLocked;
+	}
+	
+	return path->stepCount;
+}
+
+/**
+ * Finds the next "fly best step" given a node and a target absolute position
+ * "fly best step" : if there were no walls it would be the best step...
+ * The node passed by reference is modified
+ * 
+ * @return the oppositeNode wich is the current node with the would be new exit arm locked
+ */
+s_node stp_nodeSetNewExitArm( s_node * node, int target)
+{
+	int stepDirPriority[4];
+	int i, j;
+	int nextStepAbs;
+	//next node arms are set as exit arms, and old exit arm is locked
+	s_node nodeOpposite;//nodeOpposite contains a node where next node is locked and exit arm is kept;
+	
+	nodeOpposite = *node;//copy content
+	
+	if (!stp_setDirectionPriority(stepDirPriority, node->absPos, target)) {
+		node->exitArm = NOT_SET;
+		return nodeOpposite; // NOT POSSIBLE TO FIND NEXT STEP _ALLREADY IN TARGET
+	}
+	
+	/* Convert stp_nodeSetNewExitArmPriority directions to absolutePositions
+	 and confront theory with reallity of the ground */
+	for (i = 0; i < 4; i++) {
+		nextStepAbs = node->absPos + stepDirPriority[i]; //make it absPos
+		for (j = 0; j < node->armCount; j++) {
+			/* if the arm is available and not locked and not the current exit arm */
+			if (node->arms[j] == nextStepAbs 
+				&& ! node->lockedArms[j] 
+				&& j != node->exitArm 
+				&& j != node->enterArm ) { //FOUND NEXT STEP
+				if (NOT_SET != node->exitArm) { // lock the old exitArm
+					node->lockedArms[node->exitArm] = 1;
+				}
+				node->exitArm = j; // set the new exit arm
+				nodeOpposite.lockedArms[j] = 1; //lock the supposed new exit arm
+				return nodeOpposite; // EVERYTHING IS COOL
+			}
+		}
+	}
+	node->exitArm = NOT_SET;
+	return nodeOpposite; // NOT POSSIBLE TO FIND NEXT STEP _DEAD END
+}
+
+/* 
+ * Finds the order in which directions are to be tried in
+ * order to get to target (from position) in the minimum steps
+ * The guess is made hypothetically by flight
+ * returns 0 if already in target or 1 if directions found 
+ */
+int stp_setDirectionPriority(int stepDirPriority[4], int position, int target) 
+{
+	int tx, ty, dx, dy;
+	int a, b;
+	
+	/* get x y coordinates of target and node abs pos and difference between both*/
+	tx = getX(target);
+	ty = getY(target);
+	dx = getX(position) - tx;
+	dy = getY(position) - ty;
+	
+	/* Make sure not Already in target */
+	if (0 == dx && 0 == dy) {
+		return 0;
+	}
+	
+	/* Get x and y "best dir" to approach target */
+	/* "best dir" : if we were to fly to target... ;) */
+	
+	/* When any of the two is not in the same x or y coordinate, getting it one step closer by x or y is equally good */
+	if (0 != dx) { // x is best 0 and worst 3
+		stepDirPriority[0] = (0 < dx)? directions[LEFT] : directions[RIGHT]; //best
+		stepDirPriority[3] = (0 < dx)? directions[RIGHT] : directions[LEFT]; //worst
+		a = 1;
+		b = 2;
+	} else { //same priority 1 and 2
+		stepDirPriority[1] = directions[LEFT];  // vanilla
+		stepDirPriority[2] = directions[RIGHT]; // vanilla
+		a = 0;
+		b = 3;
+	}
+	if (0 != dy) {
+		stepDirPriority[a] = (0 < dy)? directions[UP] : directions[DOWN]; //best
+		stepDirPriority[b] = (0 < dy)? directions[DOWN] : directions[UP]; //worst
+	} else {
+		stepDirPriority[a] = directions[UP]; //vanilla
+		stepDirPriority[b] = directions[DOWN]; //vanilla
+	}
+	
+	return 1;
+}
+
+
+/**
+ * Append the shortest path (from) to the base path (to) and erase excess in (to)
+ * @return void
+ */
+void stp_pathReplace(s_path * from, s_path * to, int startingNodeKey, int startingAbsPosKey)
+{
+	s_node nodeSwap, nodeBlank;
+	
+	int i, j, stopErasing;
+	
+	/* Erase until node that corresponds to the startReplaceAtKey absPosition */
+	for (i = to->maxNodeKey; i >= startingNodeKey; i--)
+		to->nodes[i] = nodeBlank; //blank it out
+	
+	/* Append the new nodes */
+	for (j = 0; i <= from->maxNodeKey; i++, j++) {
+		nodeSwap = from->nodes[j]; //direct array assignement copies address rather than content
+		to->nodes[i] = nodeSwap;
+	}
+	
+	/* Then replace absPositions with from.absPositions and erase excess in to.absPositions */
+	stopErasing = to->maxAbsPosKey + 1;
+	for (i = startingAbsPosKey, j = 0; i < stopErasing ; i++, j++) {
+		if (j <= from->maxAbsPosKey) { //only keep replacing if there are steps in from
+			/* Replace absPostions */
+			to->absPositions[i] = from->absPositions[j];
+			/* Update new maxAbsPosKey in to */
+			if (j == from->maxAbsPosKey) {
+				to->maxAbsPosKey = i;
+			}
+		} else { //after that, only erase
+			to->absPositions[i] = 0;
+		}
+	}
+	// Update to stepCount
+	to->stepCount = (startingAbsPosKey + 1) + from->stepCount;
+}

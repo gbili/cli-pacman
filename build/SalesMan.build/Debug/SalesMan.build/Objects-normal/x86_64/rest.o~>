@@ -1,0 +1,85 @@
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:43: error: expected specifier-qualifier-list before 's_path'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:50: error: 'CHR_CNT' undeclared here (not in a function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:53: error: 'BG_CHR_CNT' undeclared here (not in a function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:58: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'mutexDirection'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:59: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'pth'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c: In function 'main':
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:68: warning: implicit declaration of function 'loadBg'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:70: warning: implicit declaration of function 'initCharacters'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:73: error: 'pthread_attr_t' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:73: error: (Each undeclared identifier is reported only once
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:73: error: for each function it appears in.)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:73: error: expected ';' before 'attr'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:78: warning: implicit declaration of function 'pthread_mutex_init'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:78: error: 'mutexDirection' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:78: error: 'NULL' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:81: warning: implicit declaration of function 'pthread_attr_init'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:81: error: 'attr' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:82: warning: implicit declaration of function 'pthread_attr_setdetachstate'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:82: error: 'PTHREAD_CREATE_DETACHED' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:84: warning: implicit declaration of function 'pthread_create'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:84: error: 'pth' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:84: error: 'keyLogger' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:86: warning: implicit declaration of function 'pthread_attr_destroy'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:88: warning: implicit declaration of function 'pthread_detach'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:94: warning: implicit declaration of function 'pthread_mutex_lock'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:97: warning: implicit declaration of function 'pthread_mutex_unlock'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:100: warning: implicit declaration of function 'moveEveryone'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:101: warning: implicit declaration of function 'printf'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:101: warning: incompatible implicit declaration of built-in function 'printf'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:105: warning: implicit declaration of function 'system'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:106: warning: implicit declaration of function 'rasterize'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:109: warning: implicit declaration of function 'sleep'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:112: warning: implicit declaration of function 'pthread_mutex_destroy'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:113: warning: implicit declaration of function 'pthread_exit'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c: In function 'moveEveryone':
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:126: warning: implicit declaration of function 'isPlaceable'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:126: error: 'PACMAN_K' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:127: warning: implicit declaration of function 'moveCharacter'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:131: error: 'GHOSTS_START_K' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:133: warning: implicit declaration of function 'guessPath'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c: At top level:
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:143: warning: conflicting types for 'moveCharacter'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:127: warning: previous implicit declaration of 'moveCharacter' was here
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c: In function 'moveCharacter':
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:147: warning: implicit declaration of function 'placeChrInBg'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c: At top level:
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:152: warning: conflicting types for 'initCharacters'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:70: warning: previous implicit declaration of 'initCharacters' was here
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c: In function 'initCharacters':
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:154: error: 'BG_LINE_CHR_CNT' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:157: error: 'PACMAN_K' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:157: error: 'CHR_PACMAN' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:163: error: 'GHOSTS_START_K' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:164: error: 'CHR_GHOST' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:166: warning: implicit declaration of function 'rand'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c: In function 'keyLogger':
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:180: warning: implicit declaration of function 'getchar'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:186: error: 'LEFT' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:189: error: 'DOWN' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:192: error: 'RIGHT' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:195: error: 'UP' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:198: error: 'mutexDirection' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:202: error: 'NULL' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c: At top level:
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:207: warning: conflicting types for 'placeChrInBg'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:147: warning: previous implicit declaration of 'placeChrInBg' was here
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c: In function 'placeChrInBg':
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:209: error: 'CHR_PACMAN' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:209: error: 'CHR_FOOD' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c: At top level:
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:220: warning: conflicting types for 'rasterize'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:106: warning: previous implicit declaration of 'rasterize' was here
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c: In function 'rasterize':
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:223: warning: incompatible implicit declaration of built-in function 'printf'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c: At top level:
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:238: warning: conflicting types for 'loadBg'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:68: warning: previous implicit declaration of 'loadBg' was here
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c: In function 'loadBg':
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:240: error: 'FILE' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:240: error: 'f' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:242: error: 'NULL' undeclared (first use in this function)
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:242: warning: implicit declaration of function 'fopen'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:243: warning: incompatible implicit declaration of built-in function 'printf'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:247: warning: implicit declaration of function 'fread'
+/Users/gui/Dropbox/Dev/C/SalesMan/rest.c:247: warning: implicit declaration of function 'feof'
